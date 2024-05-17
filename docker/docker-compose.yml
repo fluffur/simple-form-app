@@ -1,0 +1,12 @@
+services:
+
+  # nginx
+  web:
+    image: nginx:1.25.5
+    ports:
+      - "80:80"
+
+  # php
+  app:
+    build:
+      dockerfile: ./php/Dockerfile
